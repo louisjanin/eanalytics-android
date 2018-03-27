@@ -32,7 +32,7 @@ Dans le cas d'une application native, notre SDK doit être incorporé au code so
 
 ```xml
 EAProperties properties = new EAProperties.Builder("NOM_PAGE”).build();
-Eanalytics.getInstance().track(properties);
+EAnalytics.getInstance().track(properties);
 ```
 
 Notre **SDK** a été conçu pour faciliter au maximum l'intégration en offrant une structure objet simple à utiliser et une documentation détaillée.
@@ -194,7 +194,7 @@ EAProperties genericTag = new EAProperties.Builder("NOM_PAGE")
 .setUID("UID")
 .set("NOM_PARAM_PERSO","VALEUR_PARAM_PERSO")
 .build();
-Eanalytics.getInstance().track(genericTag);
+EAnalytics.getInstance().track(genericTag);
 ```
 
 __**Avec valeurs:**__
@@ -204,7 +204,7 @@ EAProperties genericTag = new EAProperties.Builder("|univers|rubrique|page")
 .setUID("5434742")
 .set("abonnement","mensuel")
 .build();
-Eanalytics.getInstance().track(genericTag);
+EAnalytics.getInstance().track(genericTag);
 ```
 
 # Page produit
@@ -426,7 +426,7 @@ __**Exemple:**__
 EAProperties errorTag = new EAProperties.Builder("erreur|404")
 .set("error","1")
 .build();
-Eanalytics.getInstance().track(errorTag);
+EAnalytics.getInstance().track(errorTag);
 ```
 
 # Page de devis
